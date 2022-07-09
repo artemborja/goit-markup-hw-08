@@ -1,0 +1,12 @@
+.hiro {
+  height: 400px;
+  width: 480px;
+  margin: 0 auto;
+  background-color: var(--color-bgr-main);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/Header.jpg");
+}

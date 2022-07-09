@@ -1,0 +1,77 @@
+:root {
+  --color-main-text: #212121;
+  --color-secondary-text: #757575;
+  --color-bgr-main: #c4c4c4;
+  --color-bgr-secondary: #f5f4fa;
+  --color-white: #fff;
+  --color-logo: #2196f3;
+  --color-btn-hover: #188ce8;
+  --color-svg: #afb1b8;
+  --animating: cubic-bezier(0.4, 0, 0.2, 1);
+  --shedow-team-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shedow-btn-hover: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shedow-portfolio-cards: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.6);
+  --shedow-btn-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  font-family: "Roboto", "Raleway", sens-serif;
+  color: var(--color-main-text);
+  background-color: var(--color-white);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.hiro {
+  height: 400px;
+  width: 480px;
+  margin: 0 auto;
+  background-color: var(--color-bgr-main);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header.jpg");
+}
+
+.visualy-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
 :root {
-  --color-main-text: #212121;
-  --color-secondary-text: #757575;
+  --color-text-main: #212121;
+  --color-text-secondary: #757575;
   --color-bgr-main: #c4c4c4;
-  --color-bgr-secondary: #f5f4fa;
+  --color-bgr-content: #f5f4fa;
   --color-white: #fff;
   --color-logo: #2196f3;
   --color-btn-hover: #188ce8;
@@ -54,12 +54,32 @@ li {
   list-style: none;
 }
 
-.hiro {
-  height: 400px;
-  width: 480px;
-  margin: 0 auto;
-  background-color: var(--color-bgr-main);
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header.jpg");
+.button, .hiro__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-logo);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border: 0;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.button:hover, .hiro__button:hover, .button:focus, .hiro__button:focus {
+  background-color: var(--color-btn-hover);
+  box-shadow: var(--shedow-btn-hover);
+}
+.button:active, .hiro__button:active {
+  box-shadow: none;
 }
 
 .visualy-hidden {
@@ -74,4 +94,117 @@ li {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+}
+
+.hiro {
+  height: 400px;
+  width: 480px;
+  margin: 0 auto;
+  padding-top: 118px;
+  background-color: var(--color-bgr-main);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header.jpg");
+}
+
+.hiro__button {
+  width: 200px;
+  height: 50px;
+}
+
+.hiro__headline {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features {
+  width: 480px;
+  padding: 60px 15px 30px;
+  margin: 0 auto;
+}
+
+.features__item {
+  padding-bottom: 30px;
+}
+
+.features__headline {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secondary);
+}
+
+.antenna::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--color-bgr-content);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../images/antenna.svg");
+}
+
+.clock::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--color-bgr-content);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../images/clock.svg");
+}
+
+.diagram::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--color-bgr-content);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../images/diagram.svg");
+}
+
+.astronaut::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--color-bgr-content);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../images/astronaut.svg");
+}
+
+.team {
+  width: 480px;
+  margin: 0 auto;
+  padding: 60px 15px 30px;
+  background-color: var(--color-bgr-content);
+}
+
+.team__header {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.8;
+  letter-spacing: 0.03;
+  text-align: center;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

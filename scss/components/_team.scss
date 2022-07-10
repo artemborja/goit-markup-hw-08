@@ -1,0 +1,12 @@
+.team {
+  width: 480px;
+  margin: 0 auto;
+  padding: 60px 15px 30px;
+  background-color: var(--color-bgr-content);
+}
+
+.team__header {
+  @include font(700, 28px, 1.8, 0.03);
+  text-align: center;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,41 @@
+.features {
+  width: 480px;
+  padding: 60px 15px 30px;
+  margin: 0 auto;
+}
+
+.features__item {
+  padding-bottom: 30px;
+}
+
+.features__headline {
+  margin-bottom: 10px;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features__text {
+  @include font(400, 14px, 1.71, 0.03em);
+  color: var(--color-text-secondary);
+}
+
+.antenna::before {
+  @include features;
+  background-image: url("../../images/antenna.svg");
+}
+
+.clock::before {
+  @include features;
+  background-image: url("../../images/clock.svg");
+}
+
+.diagram::before {
+  @include features;
+  background-image: url("../../images/diagram.svg");
+}
+
+.astronaut::before {
+  @include features;
+  background-image: url("../../images/astronaut.svg");
+}

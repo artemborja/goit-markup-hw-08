@@ -1,5 +1,8 @@
 @import "./base/variables";
 @import "./base/normalise";
-@import "./base/nonstyles";
-@import "./components/hiro";
+@import "./base/general";
 @import "./base/hidden";
+@import "./utils/mixins";
+@import "./components/hiro";
+@import "./components/features";
+@import "./components/team";

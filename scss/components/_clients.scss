@@ -1,0 +1,31 @@
+.clients {
+  width: 480px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients__item {
+  width: calc((100% - 15px * 4) / 2);
+  margin: 15px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  fill: var(--color-svg);
+  border: solid 1px var(--color-svg);
+  border-radius: 4px;
+  transition: fill 250ms var(--animating), border-color 250ms var(--animating);
+  &:hover,
+  &:focus {
+    fill: var(--color-logo);
+    border-color: var(--color-logo);
+  }
+}

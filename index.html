@@ -17,7 +17,35 @@
   </head>
 </html>
 <body>
-  <header></header>
+  <header class="header">
+    <nav class="header__nav">
+      <a href="#" class="header__link">
+        <span class="logo-web">Web</span>Studio</a
+      >
+      <button
+        class="header__button is-open"
+        type="button"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <svg
+          class="header__picture"
+          width="40px"
+          height="40px"
+          aria-label="пермикач мобільного меню"
+        >
+          <use
+            class="header__icon-menu"
+            href="./images/new-sprite.svg#icon-menu_40px"
+          ></use>
+          <!--<use
+            class="header__icon-cross"
+            href="./images/new-sprite.svg#icon-close_40px"
+          ></use>-->
+        </svg>
+      </button>
+    </nav>
+  </header>
   <main>
     <section class="hiro">
       <h1 class="hiro__headline">
@@ -485,17 +513,16 @@
     </div>
     <form class="join">
       <p class="join__text">Подпишитесь на рассылку</p>
-      <div class="join__conteiner">
-        <label for="">
-          <input class="join__input" type="email" placeholder="E-mail" />
-        </label>
-        <button class="join__btn" type="submit">
-          Подписаться
-          <svg class="join__picture">
-            <use href="./images/"></use>
-          </svg>
-        </button>
-      </div>
+      <label for="">
+        <input class="join__input" type="email" placeholder="E-mail" />
+      </label>
+      <button class="join__btn" type="submit">
+        Подписаться
+        <svg class="join__picture" width="24px" height="24px">
+          <use href="./images/new-sprite.svg#icon-send"></use>
+        </svg>
+      </button>
     </form>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>

@@ -13,38 +13,86 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="../dist/css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
 </html>
 <body>
   <header class="header">
-    <nav class="header__nav">
-      <a href="#" class="header__link">
-        <span class="logo-web">Web</span>Studio</a
+    <a href="#" class="header__link">
+      <span class="logo-web">Web</span>Studio</a
+    >
+    <button
+      class="header__button is-open"
+      type="button"
+      aria-expanded="false"
+      data-menu-open
+    >
+      <svg
+        class="header__picture"
+        width="40px"
+        height="40px"
+        aria-label="пермикач мобільного меню"
       >
-      <button
-        class="header__button is-open"
-        type="button"
-        aria-expanded="false"
-        data-menu-button
-      >
-        <svg
-          class="header__picture"
-          width="40px"
-          height="40px"
-          aria-label="пермикач мобільного меню"
-        >
-          <use
-            class="header__icon-menu"
-            href="./images/new-sprite.svg#icon-menu_40px"
-          ></use>
-          <!--<use
+        <use
+          class="header__icon-menu"
+          href="./images/new-sprite.svg#icon-menu_40px"
+        ></use>
+        <!--<use
             class="header__icon-cross"
             href="./images/new-sprite.svg#icon-close_40px"
           ></use>-->
-        </svg>
-      </button>
-    </nav>
+      </svg>
+    </button>
+    <div class="backdrop is-hiden" data-menu>
+      <div class="mobil-modal">
+        <button class="mobil-modal__btn" type="button" data-menu-close>
+          <svg class="mobil-modal__picture" width="40px" height="40px">
+            <use href="./images/new-sprite.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <nav class="mobil-modal__navigate">
+          <ul class="mobil-modal__list list">
+            <li class="mobil-modal__item">
+              <a href="" class="mobil-modal__link">Студия</a>
+            </li>
+            <li class="mobil-modal__item">
+              <a href="" class="mobil-modal__link">Портфолио</a>
+            </li>
+            <li class="mobil-modal__item">
+              <a href="" class="mobil-modal__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobil-modal__connection">
+          <ul class="mobil-modal__connect-list list">
+            <li class="mobil-modal__connect-item">
+              <a href="tel:+38 096 111 11 11" class="mobil-modal__phone"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobil-modal__connect-item">
+              <a href="mailto:info@devstudio.com" class="mobil-modal__mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobil-modal__social list">
+          <li class="mobil-modal__social-item">
+            <a href="" class="mobil-modal__social-link">Instagram</a>
+          </li>
+          <li class="mobil-modal__social-item before">
+            <a href="" class="mobil-modal__social-link">Twitter</a>
+          </li>
+          <li class="mobil-modal__social-item before">
+            <a href="" class="mobil-modal__social-link">Facebook</a>
+          </li>
+          <li class="mobil-modal__social-item before">
+            <a href="" class="mobil-modal__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <main>
     <section class="hiro">

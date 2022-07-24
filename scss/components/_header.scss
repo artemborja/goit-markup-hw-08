@@ -1,4 +1,7 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 480px;
   height: 60px;
   padding: 0 15px;
@@ -8,12 +11,6 @@
     height: 1px;
     background-color: var(--color-header-line);
   }
-}
-
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header__link {
@@ -28,6 +25,7 @@
   background-color: var(--color-white);
   border-color: var(--color-white);
   cursor: pointer;
+  transition: fill 250ms var(--animating);
   &:hover,
   &:focus {
     fill: var(--color-logo);

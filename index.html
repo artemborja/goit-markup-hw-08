@@ -43,7 +43,7 @@
           ></use>-->
       </svg>
     </button>
-    <div class="backdrop is-hiden" data-menu>
+    <div class="backdrop is-hidden" data-menu>
       <div class="mobil-modal">
         <button class="mobil-modal__btn" type="button" data-menu-close>
           <svg class="mobil-modal__picture" width="40px" height="40px">
@@ -100,7 +100,9 @@
         Эффективные решения <br />
         для вашего бизнеса
       </h1>
-      <button class="hiro__button" type="button">Заказать услугу</button>
+      <button class="hiro__button" type="button" data-modal-open>
+        Заказать услугу
+      </button>
     </section>
     <section class="features">
       <h2 class="visualy-hidden">features</h2>
@@ -572,5 +574,72 @@
       </button>
     </form>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close" type="button" data-modal-close>
+        <svg class="close__picture" width="11px" height="11px">
+          <use href="./images/cross-defs.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+      <form class="data" action="">
+        <div class="data__field">
+          <label class="data__text" for="name">Имя</label
+          ><input class="data__frame" type="text" id="name" placeholder=" " />
+          <svg class="data__icons" width="12" height="12">
+            <use href="./images/big-sprite.svg#icon-person"></use>
+          </svg>
+        </div>
+        <div class="data__field">
+          <label class="data__text" for="tel">Телефон </label
+          ><input class="data__frame" type="tel" id="tel" placeholder=" " />
+          <svg class="data__icons" width="13" height="13">
+            <use href="./images/big-sprite.svg#icon-phonepipe"></use>
+          </svg>
+        </div>
+        <div class="data__field">
+          <label class="data__text" for="email">Почта</label
+          ><input
+            class="data__frame"
+            type="email"
+            name=""
+            id="email"
+            placeholder=" "
+          />
+          <svg class="data__icons" width="15" height="12">
+            <use href="./images/big-sprite.svg#icon-black-envelope"></use>
+          </svg>
+        </div>
+        <div class="data__field">
+          <label class="data__text" for="coments">Комментарий</label
+          ><textarea
+            class="data__comments"
+            name="coments"
+            id="coments"
+            rows="100%"
+            placeholder="Введите текст"
+          ></textarea>
+        </div>
+        <div class="conditions">
+          <label class="conditions__text" for="checkbox"
+            >Соглашаюсь с рассылкой и принимаю
+            <input
+              class="conditions__tick"
+              type="checkbox"
+              name="agree"
+              value="checkbox"
+              id="checkbox"
+              placeholder=" "
+              required
+            />
+            <span class="conditions__icon"></span>
+          </label>
+          <a class="conditions__link" href="#">Условия договора</a>
+        </div>
+        <button class="data__button button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
 </body>

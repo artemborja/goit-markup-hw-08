@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__link">
+        <span class="logo-web">Web</span>Studio</a
+      >
+      <button
+        class="header__button is-open"
+        type="button"
+        aria-expanded="false"
+        data-menu-open
+      >
+        <svg
+          class="header__picture"
+          width="40px"
+          height="40px"
+          aria-label="пермикач мобільного меню"
+        >
+          <use
+            class="header__icon-menu"
+            href="./images/new-sprite.svg#icon-menu_40px"
+          ></use>
+          <!--<use
+            class="header__icon-cross"
+            href="./images/new-sprite.svg#icon-close_40px"
+          ></use>-->
+        </svg>
+      </button>
+      <div class="backdrop is-hidden" data-menu>
+        <div class="mobil-modal">
+          <button class="mobil-modal__btn" type="button" data-menu-close>
+            <svg class="mobil-modal__picture" width="40px" height="40px">
+              <use href="./images/new-sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <nav class="mobil-modal__navigate">
+            <ul class="mobil-modal__list list">
+              <li class="mobil-modal__item">
+                <a href="./index.html" class="mobil-modal__link">Студия</a>
+              </li>
+              <li class="mobil-modal__item">
+                <a href="./portfolio.html" class="mobil-modal__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobil-modal__item">
+                <a href="#" class="mobil-modal__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobil-modal__connection">
+            <ul class="mobil-modal__connect-list list">
+              <li class="mobil-modal__connect-item">
+                <a href="tel:+38 096 111 11 11" class="mobil-modal__phone"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobil-modal__connect-item">
+                <a href="mailto:info@devstudio.com" class="mobil-modal__mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobil-modal__social list">
+            <li class="mobil-modal__social-item">
+              <a href="" class="mobil-modal__social-link">Instagram</a>
+            </li>
+            <li class="mobil-modal__social-item before">
+              <a href="" class="mobil-modal__social-link">Twitter</a>
+            </li>
+            <li class="mobil-modal__social-item before">
+              <a href="" class="mobil-modal__social-link">Facebook</a>
+            </li>
+            <li class="mobil-modal__social-item before">
+              <a href="" class="mobil-modal__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="filters">
+      <h2 class="visualy-hidden">filters</h2>
+      <ul class="filters__list list">
+        <li class="filters__item">
+          <button class="filters__btn" type="button">Все</button>
+        </li>
+        <li class="filters__item">
+          <button class="filters__btn" type="button">Веб-сайты</button>
+        </li>
+        <li class="filters__item">
+          <button class="filters__btn" type="button">Приложения</button>
+        </li>
+        <li class="filters__item">
+          <button class="filters__btn" type="button">Дизайн</button>
+        </li>
+        <li class="filters__item">
+          <button class="filters__btn" type="button">Маркетинг</button>
+        </li>
+      </ul>
+    </section>
+    <section class="cards">
+      <ul class="cards__list list">
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img1-desktop.webp    1x,
+                    ./images/img1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img1-desktop.jpg    1x,
+                    ./images/img1-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img1-tablet.webp    1x,
+                    ./images/img1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img1-tablet.jpg    1x,
+                    ./images/img1-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img1.jpg"
+                  alt="laptop"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-desktop.webp    1x,
+                    ./images/img2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-desktop.jpg    1x,
+                    ./images/img2-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-tablet.webp    1x,
+                    ./images/img2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-tablet.jpg    1x,
+                    ./images/img2-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img2.jpg"
+                  alt="bascetbal"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-desktop.webp    1x,
+                    ./images/img3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-desktop.jpg    1x,
+                    ./images/img3-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-tablet.webp    1x,
+                    ./images/img3-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-tablet.jpg    1x,
+                    ./images/img3-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img3.jpg"
+                  alt="seafood"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img4.webp 1x, ./images/img4@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-desktop.webp    1x,
+                    ./images/img4-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-desktop.jpg    1x,
+                    ./images/img4-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-tablet.webp    1x,
+                    ./images/img4-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-tablet.jpg    1x,
+                    ./images/img4-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img4.jpg"
+                  alt="headphons"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img5.webp 1x, ./images/img5@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img5-desktop.webp    1x,
+                    ./images/img5-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img5-desktop.jpg    1x,
+                    ./images/img5-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img5-tablet.webp    1x,
+                    ./images/img5-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img5-tablet.jpg    1x,
+                    ./images/img5-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img5.jpg"
+                  alt="boxes"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img6.webp 1x, ./images/img6@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img6-desktop.webp    1x,
+                    ./images/img6-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img6-desktop.jpg    1x,
+                    ./images/img6-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img6-tablet.webp    1x,
+                    ./images/img6-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img6-tablet.jpg    1x,
+                    ./images/img6-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img6.jpg"
+                  alt="screen"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img7.webp 1x, ./images/img7@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img7-desktop.webp    1x,
+                    ./images/img7-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img7-desktop.jpg    1x,
+                    ./images/img7-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img7-tablet.webp    1x,
+                    ./images/img7-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img7-tablet.jpg    1x,
+                    ./images/img7-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img7.jpg"
+                  alt="book"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img8.webp 1x, ./images/img8@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img8.jpg 1x, ./images/img8@2x.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img8-desktop.webp    1x,
+                    ./images/img8-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img8-desktop.jpg    1x,
+                    ./images/img8-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img8-tablet.webp    1x,
+                    ./images/img8-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img8-tablet.jpg    1x,
+                    ./images/img8-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 480px)"
+                />
+                <img class="cards__picture" src="./images/img8.jpg" alt="tag" />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+        <li class="cards__item">
+          <a href="#" class="cards__link">
+            <div class="cards__picture-container">
+              <picture>
+                <source
+                  srcset="./images/img9.webp 1x, ./images/img9@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="./images/img9.jpg 1x, ./images/img9@2x.jpg 2x"
+                  type="image/webp"
+                  media="(max-width: 479px)"
+                />
+                <source
+                  srcset="
+                    ./images/img9-desktop.webp    1x,
+                    ./images/img9-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img9-desktop.jpg    1x,
+                    ./images/img9-desktop@2x.jpg 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img9-tablet.webp    1x,
+                    ./images/img9-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/img9-tablet.jpg    1x,
+                    ./images/img9-tablet@2x.jpg 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="cards__picture"
+                  src="./images/img9.jpg"
+                  alt="work in leptop"
+                />
+              </picture>
+            </div>
+            <div class="cards__text-container">
+              <h3 class="cards__header"></h3>
+              <p class="cards__text"></p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

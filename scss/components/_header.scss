@@ -26,6 +26,7 @@
   border-color: var(--color-white);
   cursor: pointer;
   transition: fill 250ms var(--animating);
+  border: 0;
   &:hover,
   &:focus {
     fill: var(--color-logo);

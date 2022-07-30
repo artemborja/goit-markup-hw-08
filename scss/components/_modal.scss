@@ -5,21 +5,23 @@
   transform: translate(-50%, 0);
   height: 100%;
   width: 480px;
-  padding: 94px 15px auto;
+  padding-top: 93px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--animating);
 }
 
-.backdrop .modal {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
-  width: 528px;
+  width: 450px;
+  margin: 0 auto;
   padding: 40px;
   border-radius: 4px;
-  box-shadow: var(--shadow-cards);
+  box-shadow: var(--shedow-team-cards);
   background-color: var(--color-white);
   transform: translate(-50%, -50%);
 }
@@ -36,24 +38,20 @@
 
   text-decoration: none;
   color: inherit;
-  background-color: var(--text-hover-wight);
+  background-color: var(--color-white);
 
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  transition-duration: box-shadow, color;
+  transition-duration: color;
   transition-duration: 250ms;
   transition-timing-function: var(--animating);
 
   fill: black;
   &:hover,
   &:focus {
-    box-shadow: var(--shadow-cards);
-    color: var(--logo-bgr-blue);
-  }
-  &:active {
-    box-shadow: none;
+    color: var(--color-logo);
   }
 }
 
@@ -62,10 +60,9 @@
 }
 
 .modal__text {
-  font-weight: 700;
+  @include font(700, 20px, 1.5, 0.03em);
   text-align: center;
-  font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .data {
@@ -83,9 +80,8 @@
 }
 
 .data__text {
-  font-size: 12px;
-  line-height: 1.17;
-  color: var(--modal-text-color);
+  @include font(400, 12px, 1.17, 0.03em);
+  color: var(--color-text);
   padding-bottom: 4px;
 }
 
@@ -98,36 +94,36 @@
   padding-left: 42px;
   &:hover,
   &:focus {
-    border-color: var(--logo-bgr-blue);
+    border-color: var(--color-logo);
   }
   &:not(:placeholder-shown) {
-    border-color: var(--logo-bgr-blue);
+    border-color: var(--color-logo);
   }
 }
 
 .data__frame:hover ~ .data__icons,
 .data__frame:focus ~ .data__icons {
-  fill: var(--logo-bgr-blue);
+  fill: var(--color-logo);
 }
 
 .data__frame:not(:placeholder-shown) + .data__icons {
-  fill: var(--logo-bgr-blue);
+  fill: var(--color-logo);
 }
 
 .data__icons {
   position: absolute;
-  bottom: 14px;
-  left: 15px;
+  bottom: 11px;
+  left: 12px;
   fill: currentColor;
   transition: fill 250ms var(--animating);
 }
 
 .data__comments {
-  border: 1px solid var(--modal-frame-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   padding: 12px 16px;
   resize: none;
@@ -135,15 +131,15 @@
   transition: border-color 250ms var(--animating);
   &:hover,
   &:focus {
-    border-color: var(--logo-bgr-blue);
+    border-color: var(--color-logo);
   }
   &:not(:placeholder-shown) {
-    border-color: var(--logo-bgr-blue);
+    border-color: var(--color-logo);
   }
 }
 
 .data__comments > [placeholder] {
-  color: var(--modal-frame-color);
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .conditions {
@@ -152,12 +148,11 @@
 }
 
 .conditions__text {
+  @include font(400, 12px, 1.17, 0.03em);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--content-text-color);
+  color: var(--color-text);
 }
 
 .conditions__tick {
@@ -174,10 +169,10 @@
 }
 
 .conditions__tick:checked + .conditions__icon {
-  background-image: url(../images/checkin.svg);
-  background-color: var(--logo-bgr-blue);
+  background-color: var(--color-logo);
+  background-image: url(../../images/icon-check.svg);
   background-size: contain;
-  border-color: var(--logo-bgr-blue);
+  border-color: var(--color-logo);
 }
 
 .conditions__icon {
@@ -185,18 +180,19 @@
   order: -1;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
-  border: 1.5px solid var(--logo-black);
+  margin-right: 8px;
+  border: 2px solid black;
   border-radius: 2px;
 }
 
 .conditions__link {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--logo-bgr-blue);
+  @include font(400, 12px, 1.66, 0.03em);
+  color: var(--color-logo);
   margin-left: 4px;
 }
 
 .data__button {
-  padding: 10px 55px 10px 56px;
+  @extend %button;
+  width: 200px;
+  height: 50px;
 }

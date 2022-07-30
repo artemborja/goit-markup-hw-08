@@ -88,6 +88,10 @@ li {
   color: var(--color-logo);
 }
 
+.curent {
+  color: var(--color-logo);
+}
+
 .visualy-hidden {
   position: absolute;
   white-space: nowrap;
@@ -103,6 +107,7 @@ li {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,6 +117,10 @@ li {
   margin: 0 auto;
 }
 .header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 1px;
   background-color: var(--color-header-line);
@@ -139,21 +148,11 @@ li {
   fill: var(--color-logo);
 }
 
-/*.header__button .header__icon-cross {
-  display: none;
-}
-
-.header__button.is-open .header__icon-cross {
-  display: block;
-}
-
-.header__button.is-open .header__icon-menu {
-  display: none;
-}*/
 .backdrop {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -847,7 +846,7 @@ li {
   cursor: pointer;
   transition: color 250ms var(--animating), background-color 250ms var(--animating);
 }
-.filters__btnhover, .filters__btnfocus {
+.filters__btn:hover, .filters__btn:focus {
   color: var(--color-white);
   background-color: var(--color-logo);
 }
@@ -860,9 +859,24 @@ li {
 
 .cards__item {
   margin-bottom: 30px;
+  transition: box-shadow 250ms var(--animating);
 }
-.cards__itemhover, .cards__itemfocus {
+.cards__item:hover, .cards__item:focus {
   box-shadow: var(--shedow-portfolio-cards);
+}
+
+.cards__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.cards__link:hover .cards__animating, .cards__link:focus {
+  transform: translateY(-100%);
+}
+
+.cards__picture-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .cards__picture {
@@ -874,4 +888,40 @@ li {
   border-bottom: 1px solid rgb(238, 238, 238);
   border-left: 1px solid rgb(238, 238, 238);
   border-right: 1px solid rgb(238, 238, 238);
+  padding: 20px 24px;
+}
+
+.cards__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.cards__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+
+.cards__animating {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  padding: 77px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms var(--animating);
+}
+
+.cards__animating-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
 }/*# sourceMappingURL=main.css.map */

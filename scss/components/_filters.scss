@@ -22,8 +22,8 @@
   cursor: pointer;
   transition: color 250ms var(--animating),
     background-color 250ms var(--animating);
-  &hover,
-  &focus {
+  &:hover,
+  &:focus {
     color: var(--color-white);
     background-color: var(--color-logo);
   }

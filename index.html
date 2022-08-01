@@ -18,9 +18,49 @@
 </html>
 <body>
   <header class="header">
-    <a href="./index.html" class="header__link">
+    <a href="./index.html" class="header__link-logo">
       <span class="logo-web">Web</span>Studio</a
     >
+    <nav class="header__navigate">
+      <ul class="header__list list">
+        <li class="header__item">
+          <a href="./index.html" class="header__link actual">Студия</a>
+        </li>
+        <li class="header__item">
+          <a href="./portfolio.html" class="header__link">Портфолио</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="header__connection">
+      <ul class="header__connect-list list">
+        <li class="header__connect-item">
+          <a href="mailto:info@devstudio.com" class="header__link-contact"
+            ><svg class="header__envelope" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.688 0H1.313C.589 0 0 .56 0 1.25v7.5C0 9.44.589 10 1.313 10h11.375C13.41 10 14 9.44 14 8.75v-7.5C14 .56 13.411 0 12.687 0Zm0 .833c.059 0 .115.012.167.033L7 5.699 1.145.866a.454.454 0 0 1 .167-.033h11.375Zm0 8.334H1.313a.428.428 0 0 1-.438-.417V1.746l5.838 4.819a.45.45 0 0 0 .574 0l5.838-4.819V8.75c0 .23-.196.417-.438.417Z"
+              />
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="header__connect-item">
+          <a href="tel:+38 096 111 11 11" class="header__link-contact"
+            ><svg class="header__smartphone" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.5 0h-7C.673 0 0 .589 0 1.313v11.374C0 13.412.673 14 1.5 14h7c.827 0 1.5-.589 1.5-1.313V1.313C10 .589 9.327 0 8.5 0Zm-7 .875h7c.276 0 .5.196.5.438V10.5H1V1.312c0-.24.224-.437.5-.437Zm7 12.25h-7c-.276 0-.5-.196-.5-.438v-1.312h8v1.313c0 .24-.224.437-.5.437Z"
+              />
+              <path
+                d="M2.354 11.94a.4.4 0 0 1 0 .62.552.552 0 0 1-.708 0 .4.4 0 0 1 0-.62.552.552 0 0 1 .708 0Z"
+              />
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
     <button
       class="header__button is-open"
       type="button"
@@ -154,22 +194,6 @@
             />
             <source
               srcset="
-                ./images/photo1-desktop.webp    1x,
-                ./images/photo1-desktop@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/photo1-desktop.jpg    1x,
-                ./images/photo1-desktop@2x.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
                 ./images/photo1-tablet.webp    1x,
                 ./images/photo1-tablet@2x.webp 2x
               "
@@ -184,6 +208,23 @@
               type="image/jpg"
               media="(min-width: 480px)"
             />
+            <source
+              srcset="
+                ./images/photo1-desktop.webp    1x,
+                ./images/photo1-desktop@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/photo1-desktop.jpg    1x,
+                ./images/photo1-desktop@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 768px)"
+            />
+
             <img class="team__picture" src="./images/photo1.jpg" alt="" />
           </picture>
           <h3 class="team__headline">Игорь Демьяненко</h3>
@@ -233,22 +274,6 @@
             />
             <source
               srcset="
-                ./images/photo2-desktop.webp    1x,
-                ./images/photo2-desktop@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/photo2-desktop.jpg    1x,
-                ./images/photo2-desktop@2x.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
                 ./images/photo2-tablet.webp    1x,
                 ./images/photo2-tablet@2x.webp 2x
               "
@@ -263,6 +288,23 @@
               type="image/jpg"
               media="(min-width: 480px)"
             />
+            <source
+              srcset="
+                ./images/photo2-desktop.webp    1x,
+                ./images/photo2-desktop@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/photo2-desktop.jpg    1x,
+                ./images/photo2-desktop@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 768px)"
+            />
+
             <img class="team__picture" src="./images/photo2.jpg" alt="" />
           </picture>
           <h3 class="team__headline">Ольга Репина</h3>
@@ -312,22 +354,6 @@
             />
             <source
               srcset="
-                ./images/photo3-desktop.webp    1x,
-                ./images/photo3-desktop@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/photo3-desktop.jpg    1x,
-                ./images/photo3-desktop@2x.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
                 ./images/photo3-tablet.webp    1x,
                 ./images/photo3-tablet@2x.webp 2x
               "
@@ -342,6 +368,23 @@
               type="image/jpg"
               media="(min-width: 480px)"
             />
+            <source
+              srcset="
+                ./images/photo3-desktop.webp    1x,
+                ./images/photo3-desktop@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/photo3-desktop.jpg    1x,
+                ./images/photo3-desktop@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 768px)"
+            />
+
             <img class="team__picture" src="./images/photo3.jpg" alt="" />
           </picture>
           <h3 class="team__headline">Николай Тарасов</h3>
@@ -391,22 +434,6 @@
             />
             <source
               srcset="
-                ./images/photo4-desktop.webp    1x,
-                ./images/photo4-desktop@2x.webp 2x
-              "
-              type="image/webp"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/photo4-desktop.jpg    1x,
-                ./images/photo4-desktop@2x.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
                 ./images/photo4-tablet.webp    1x,
                 ./images/photo4-tablet@2x.webp 2x
               "
@@ -421,6 +448,23 @@
               type="image/jpg"
               media="(min-width: 480px)"
             />
+            <source
+              srcset="
+                ./images/photo4-desktop.webp    1x,
+                ./images/photo4-desktop@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/photo4-desktop.jpg    1x,
+                ./images/photo4-desktop@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 768px)"
+            />
+
             <img class="team__picture" src="./images/photo4.jpg" alt="" />
           </picture>
           <h3 class="team__headline">Михаил Ермаков</h3>
@@ -506,60 +550,62 @@
     </section>
   </main>
   <footer class="footer">
-    <a href="./index.html" class="footer__link">
-      <span class="logo-web">Web</span>Studio
-    </a>
-    <address class="address">
-      <a
-        href="https://goo.gl/maps/ZqeTFEpqozLa5zfj9"
-        class="address__link"
-        target="_blank"
-        rel="noopener nofollow"
-        >г. Киев, пр-т Леси Украинки, 26</a
-      >
-      <ul class="address__list">
-        <li class="address__item">
-          <a href="mailto:info@example.com" class="address__email"
-            >info@example.com</a
-          >
-        </li>
-        <li class="address__item">
-          <a href="tel:+380991111111" class="address__phon">+380991111111</a>
-        </li>
-      </ul>
-    </address>
-    <div class="social-foot">
-      <p class="social-foot__headline">присоединяйтесь</p>
-      <ul class="social-foot__list list">
-        <li class="social-foot__item">
-          <a href="#" class="social-foot__link">
-            <svg class="social-foot__picture" width="22px" height="22px">
-              <use href="./images/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-foot__item">
-          <a href="#" class="social-foot__link">
-            <svg class="social-foot__picture" width="22px" height="22px">
-              <use href="./images/symbol-defs.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-foot__item">
-          <a href="#" class="social-foot__link">
-            <svg class="social-foot__picture" width="22px" height="22px">
-              <use href="./images/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-foot__item">
-          <a href="#" class="social-foot__link">
-            <svg class="social-foot__picture" width="22px" height="22px">
-              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <div class="container-address">
+      <address class="address">
+        <a href="./index.html" class="footer__link">
+          <span class="logo-web">Web</span>Studio
+        </a>
+        <a
+          href="https://goo.gl/maps/ZqeTFEpqozLa5zfj9"
+          class="address__link"
+          target="_blank"
+          rel="noopener nofollow"
+          >г. Киев, пр-т Леси Украинки, 26</a
+        >
+        <ul class="address__list">
+          <li class="address__item">
+            <a href="mailto:info@example.com" class="address__email"
+              >info@example.com</a
+            >
+          </li>
+          <li class="address__item">
+            <a href="tel:+380991111111" class="address__phon">+380991111111</a>
+          </li>
+        </ul>
+      </address>
+      <div class="social-foot">
+        <p class="social-foot__headline">присоединяйтесь</p>
+        <ul class="social-foot__list list">
+          <li class="social-foot__item">
+            <a href="#" class="social-foot__link">
+              <svg class="social-foot__picture" width="22px" height="22px">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-foot__item">
+            <a href="#" class="social-foot__link">
+              <svg class="social-foot__picture" width="22px" height="22px">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-foot__item">
+            <a href="#" class="social-foot__link">
+              <svg class="social-foot__picture" width="22px" height="22px">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-foot__item">
+            <a href="#" class="social-foot__link">
+              <svg class="social-foot__picture" width="22px" height="22px">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <form class="join">
       <p class="join__text">Подпишитесь на рассылку</p>

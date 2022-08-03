@@ -20,6 +20,17 @@
       ),
       url(../../images/Header-tablet.jpg);
   }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/header-desktop.jpg);
+  }
 }
 
 .hiro__button {
@@ -34,4 +45,7 @@
   color: var(--color-white);
   text-align: center;
   text-transform: uppercase;
+  @media screen and (min-width: 1600px) {
+    @include font(900, 44px, 1.36, 0.06em);
+  }
 }

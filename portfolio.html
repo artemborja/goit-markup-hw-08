@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -170,28 +170,12 @@
                   <source
                     srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
                     type="image/webp"
-                    media="(max-width: 479px)"
+                    media="(max-width: 767px)"
                   />
                   <source
                     srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                     type="image/jpg"
-                    media="(max-width: 479px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/img1-desktop.webp    1x,
-                      ./images/img1-desktop@2x.webp 2x
-                    "
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/img1-desktop.jpg    1x,
-                      ./images/img1-desktop@2x.jpg 2x
-                    "
-                    type="image/jpg"
-                    media="(min-width: 768px)"
+                    media="(max-width: 767px)"
                   />
                   <source
                     srcset="
@@ -199,7 +183,7 @@
                       ./images/img1-tablet@2x.webp 2x
                     "
                     type="image/webp"
-                    media="(min-width: 480px)"
+                    media="(min-width: 768px)"
                   />
                   <source
                     srcset="
@@ -207,8 +191,25 @@
                       ./images/img1-tablet@2x.jpg 2x
                     "
                     type="image/jpg"
-                    media="(min-width: 480px)"
+                    media="(min-width: 768px)"
                   />
+                  <source
+                    srcset="
+                      ./images/img1-desktop.webp    1x,
+                      ./images/img1-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img1-desktop.jpg    1x,
+                      ./images/img1-desktop@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1600px)"
+                  />
+
                   <img
                     class="cards__picture"
                     src="./images/img1@2.jpg"
@@ -761,60 +762,64 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="footer__link">
-        <span class="logo-web">Web</span>Studio
-      </a>
-      <address class="address">
-        <a
-          href="https://goo.gl/maps/ZqeTFEpqozLa5zfj9"
-          class="address__link"
-          target="_blank"
-          rel="noopener nofollow"
-          >г. Киев, пр-т Леси Украинки, 26</a
-        >
-        <ul class="address__list">
-          <li class="address__item">
-            <a href="mailto:info@example.com" class="address__email"
-              >info@example.com</a
-            >
-          </li>
-          <li class="address__item">
-            <a href="tel:+380991111111" class="address__phon">+380991111111</a>
-          </li>
-        </ul>
-      </address>
-      <div class="social-foot">
-        <p class="social-foot__headline">присоединяйтесь</p>
-        <ul class="social-foot__list list">
-          <li class="social-foot__item">
-            <a href="#" class="social-foot__link">
-              <svg class="social-foot__picture" width="22px" height="22px">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-foot__item">
-            <a href="#" class="social-foot__link">
-              <svg class="social-foot__picture" width="22px" height="22px">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-foot__item">
-            <a href="#" class="social-foot__link">
-              <svg class="social-foot__picture" width="22px" height="22px">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-foot__item">
-            <a href="#" class="social-foot__link">
-              <svg class="social-foot__picture" width="22px" height="22px">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <div class="container-address">
+        <address class="address">
+          <a href="./index.html" class="footer__link">
+            <span class="logo-web">Web</span>Studio
+          </a>
+          <a
+            href="https://goo.gl/maps/ZqeTFEpqozLa5zfj9"
+            class="address__link"
+            target="_blank"
+            rel="noopener nofollow"
+            >г. Киев, пр-т Леси Украинки, 26</a
+          >
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="mailto:info@example.com" class="address__email"
+                >info@example.com</a
+              >
+            </li>
+            <li class="address__item">
+              <a href="tel:+380991111111" class="address__phon"
+                >+380991111111</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="social-foot">
+          <p class="social-foot__headline">присоединяйтесь</p>
+          <ul class="social-foot__list list">
+            <li class="social-foot__item">
+              <a href="#" class="social-foot__link">
+                <svg class="social-foot__picture" width="22px" height="22px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-foot__item">
+              <a href="#" class="social-foot__link">
+                <svg class="social-foot__picture" width="22px" height="22px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-foot__item">
+              <a href="#" class="social-foot__link">
+                <svg class="social-foot__picture" width="22px" height="22px">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-foot__item">
+              <a href="#" class="social-foot__link">
+                <svg class="social-foot__picture" width="22px" height="22px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <form class="join">
         <p class="join__text">Подпишитесь на рассылку</p>

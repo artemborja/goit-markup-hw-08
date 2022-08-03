@@ -6,6 +6,12 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 215px;
+    width: 1600px;
+  }
 }
 
 .container-address {
@@ -24,10 +30,16 @@
   margin-bottom: 20px;
   color: var(--color-white);
   text-align: center;
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .address {
   margin-bottom: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 70px;
+  }
 }
 
 .address__link {
@@ -41,6 +53,9 @@
   &:hover,
   &:focus {
     color: var(--color-logo);
+  }
+  @media screen and (min-width: 1600px) {
+    text-align: left;
   }
 }
 
@@ -56,6 +71,9 @@
   &:focus {
     color: var(--color-logo);
   }
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .address__phon {
@@ -69,6 +87,9 @@
   &:focus {
     color: var(--color-logo);
   }
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .social-foot__headline {
@@ -78,6 +99,9 @@
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   margin-bottom: 20px;
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .social-foot__list {
@@ -107,6 +131,12 @@
   @extend .social-foot__headline;
 }
 
+.join__container {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
+}
+
 .join__input {
   width: 100%;
   height: 50px;
@@ -122,11 +152,16 @@
   &:focus {
     border-color: var(--color-logo);
   }
+  @media screen and (min-width: 1600px) {
+    width: 358px;
+    margin-right: 15px;
+  }
 }
 
 .join__btn {
   @extend %button;
   width: 200px;
+  height: 50px;
   padding: 10px 28px 10px 29px;
 }
 

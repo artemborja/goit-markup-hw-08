@@ -23,6 +23,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+    padding: 0 215px;
+  }
 }
 
 .header__link-logo {
@@ -36,6 +40,9 @@
 .header__navigate {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-right: 150px;
   }
 }
 
@@ -83,11 +90,23 @@
   }
 }
 
+.header__connect-list {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
+}
+
 .header__connect-item:nth-child(1) {
   margin-bottom: 10px;
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .header__link-contact {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   @include font(500, 12px, 1.17, 0.02em);
   color: var(--color-text);
@@ -96,20 +115,45 @@
   &:focus {
     color: var(--color-logo);
   }
+  @media screen and (min-width: 1600px) {
+    @include font(500, 14px, 1.14, 0.02em);
+  }
 }
 
 .header__envelope {
   width: 14px;
   height: 10px;
-  margin-right: 4px;
+  margin-right: 8px;
   fill: currentColor;
+  @media screen and (min-width: 1600px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .header__smartphone {
   width: 10px;
   height: 14px;
-  margin-right: 4px;
+  margin-right: 8px;
   fill: currentColor;
+  @media screen and (min-width: 1600px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
+
+.hidden {
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
+}
+
+.appear {
+  @media screen and (max-width: 1599px) {
+    display: none;
+  }
 }
 
 .header__button {

@@ -5,6 +5,17 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+    padding: 94px 200px 79px;
+  }
+}
+
+.clients__header {
+  @extend .team__header;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .clients__list {
@@ -17,6 +28,9 @@
   margin: 15px;
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px * 3) / 3);
+  }
+  @media screen and (min-width: 1600px) {
+    width: calc((100% - 30px * 6) / 6);
   }
 }
 

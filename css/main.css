@@ -798,7 +798,7 @@ li {
   background-color: var(--color-bgr-content);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/antenna.svg");
+  background-image: url(../images/antenna.svg);
 }
 
 .clock::before {
@@ -809,7 +809,7 @@ li {
   background-color: var(--color-bgr-content);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/clock.svg");
+  background-image: url(../images/clock.svg);
 }
 
 .diagram::before {
@@ -820,7 +820,7 @@ li {
   background-color: var(--color-bgr-content);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/diagram.svg");
+  background-image: url(../images/diagram.svg);
 }
 
 .astronaut::before {
@@ -831,7 +831,7 @@ li {
   background-color: var(--color-bgr-content);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/astronaut.svg");
+  background-image: url(../images/astronaut.svg);
 }
 
 .team {

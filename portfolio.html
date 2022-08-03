@@ -774,7 +774,7 @@
             rel="noopener nofollow"
             >г. Киев, пр-т Леси Украинки, 26</a
           >
-          <ul class="address__list">
+          <ul class="address__list list">
             <li class="address__item">
               <a href="mailto:info@example.com" class="address__email"
                 >info@example.com</a
@@ -823,15 +823,17 @@
       </div>
       <form class="join">
         <p class="join__text">Подпишитесь на рассылку</p>
-        <label for="">
-          <input class="join__input" type="email" placeholder="E-mail" />
-        </label>
-        <button class="join__btn" type="submit">
-          Подписаться
-          <svg class="join__picture" width="24px" height="24px">
-            <use href="./images/new-sprite.svg#icon-send"></use>
-          </svg>
-        </button>
+        <div class="join__container">
+          <label for="">
+            <input class="join__input" type="email" placeholder="E-mail" />
+          </label>
+          <button class="join__btn" type="submit">
+            Подписаться
+            <svg class="join__picture" width="24px" height="24px">
+              <use href="./images/new-sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </form>
     </footer>
     <script src="./js/mobile-menu.js"></script>

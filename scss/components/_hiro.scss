@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/Header.jpg");
+    url(../images/Header.jpg);
   background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -18,7 +18,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/Header-tablet.jpg);
+      url(../images/Header-tablet.jpg);
   }
   @media screen and (min-width: 1600px) {
     width: 1600px;
@@ -29,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/header-desktop.jpg);
+      url(../images/header-desktop.jpg);
   }
 }
 

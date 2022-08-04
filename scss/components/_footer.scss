@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 60px 15px;
   background-color: var(--color-bgr-footer);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     width: 768px;
   }
   @media screen and (min-width: 1600px) {
@@ -15,7 +15,7 @@
 }
 
 .container-address {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
@@ -156,7 +156,7 @@
   &:focus {
     border-color: var(--color-logo);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     width: 450px;
     margin: 0 137px 20px 151px;
   }

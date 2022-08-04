@@ -11,7 +11,7 @@
     ),
     url(../images/Header.jpg);
   background-repeat: no-repeat;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     width: 768px;
     background-image: linear-gradient(
         to top,

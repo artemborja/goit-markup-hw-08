@@ -16,7 +16,7 @@
     height: 1px;
     background-color: var(--color-header-line);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     width: 768px;
     height: 80px;
     display: flex;
@@ -38,7 +38,7 @@
 }
 
 .header__navigate {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
   @media screen and (min-width: 1600px) {
@@ -85,7 +85,7 @@
 }
 
 .header__connection {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 }
@@ -166,7 +166,7 @@
   &:focus {
     fill: var(--color-logo);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
 }

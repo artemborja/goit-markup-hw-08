@@ -2,7 +2,7 @@
   width: 480px;
   padding: 0 15px;
   margin: 0 auto;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     width: 768px;
     padding: 0;
   }
@@ -13,7 +13,7 @@
 }
 
 .cards__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -26,7 +26,7 @@
   &:focus {
     box-shadow: var(--shedow-portfolio-cards);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     width: calc((100% - 30px * 2) / 2);
     margin: 15px;
   }

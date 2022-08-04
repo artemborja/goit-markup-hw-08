@@ -126,7 +126,11 @@
     background-color: var(--color-logo);
   }
 }
-
+.join {
+  @media screen and (min-width: 1600px) {
+    padding-top: 12px;
+  }
+}
 .join__text {
   @extend .social-foot__headline;
 }
@@ -159,6 +163,7 @@
   @media screen and (min-width: 1600px) {
     width: 358px;
     margin-right: 15px;
+    margin: 0 12px 0 0;
   }
 }
 

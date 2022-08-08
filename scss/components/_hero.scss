@@ -1,8 +1,7 @@
-.hiro {
+.hero {
   height: 400px;
-  width: 480px;
-  margin: 0 auto;
   padding-top: 118px;
+  margin: 0 auto;
   background-color: var(--color-bgr-main);
   background-image: linear-gradient(
       to top,
@@ -11,8 +10,9 @@
     ),
     url(../images/Header.jpg);
   background-repeat: no-repeat;
-  @media screen and (min-width: 481px) {
-    width: 768px;
+  background-position: center;
+  background-size: contain;
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4),
@@ -20,10 +20,7 @@
       ),
       url(../images/Header-tablet.jpg);
   }
-  @media screen and (min-width: 1600px) {
-    width: 1600px;
-    height: 600px;
-    padding-top: 200px;
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to top,
         rgba(47, 48, 58, 0.4),
@@ -33,13 +30,13 @@
   }
 }
 
-.hiro__button {
+.hero__button {
   @extend %button;
   width: 200px;
   height: 50px;
 }
 
-.hiro__headline {
+.hero__headline {
   margin-bottom: 30px;
   @include font(900, 26px, 1.61, 0.06em);
   color: var(--color-white);

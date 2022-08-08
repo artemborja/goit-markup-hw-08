@@ -30,3 +30,19 @@
 .logo-web {
   color: var(--color-logo);
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 780px) {
+    min-width: 780px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
+}
